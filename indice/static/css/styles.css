@@ -11303,7 +11303,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/bg-masthead2.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -11366,11 +11366,56 @@ header.masthead h1, header.masthead .h1 {
   padding-top: 0%;
   padding-bottom: 5%;
 }
+.fondo-profesor {
+  position: relative;
+  background-color: #343a40;
+  background: url("../assets/img/profesor.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  margin-bottom: 6%;
+}
+.fondo-curso {
+  position: relative;
+  background-color: #343a40;
+  background: url("../assets/img/curso.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  margin-bottom: 6%;
+}
+.fondo-estudiante {
+  position: relative;
+  background-color: #343a40;
+  background: url("../assets/img/estudiante.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  margin-bottom: 6%;
+}
+
+.titulo-inicio{
+  color: #8f979c;
+  text-decoration: under
+}
+
+.tarjeta-inicio{
+  float: left;
+  width: 33%;
+}
+
+.col-lg-10 {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-decoration: none;
+}
 
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/bg-masthead2.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;

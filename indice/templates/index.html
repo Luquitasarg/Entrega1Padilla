@@ -73,6 +73,57 @@
 
         {% endblock formularioTemplate %}
 
+        {% block contenidoExtra  %}
+
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <h1 class="mb-5">Le damos la bienvenida</h1>
+                            
+                                <div class="row">
+                                    <div class="col">
+                                       Sistema de altas y consultas de profesores, cursos y estudiantes
+                                    </div>
+                                   
+                                </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="row row col-lg-12 col-sm-12 ">
+            <div class="container pt-md-4 pb-md-4 tarjeta-inicio">
+                    <div class="col-lg-10 col-sm-10 mb-grid-gutter pb-3">
+                        <a class="d-block nav-heading text-center" href={% url 'busqueda_curso' %}>
+                        
+                        <div class="card card-hover border-0  mb-4 "><div class="fondo-curso shadow-lg"></div>
+                        <h3 class="h5 nav-heading-title mb-0 titulo-inicio">Consulta de Cursos</h3><span class="fs-sm fw-normal text-muted">Consulta los cursos de la plataforma</span></a></div>
+                    </div>
+            </div>
+            <div class="container pt-md-4 pb-md-4 tarjeta-inicio">
+                    <div class="col-lg-10 col-sm-10 mb-grid-gutter pb-3">
+                        <a class="d-block nav-heading text-center" href={% url 'busqueda_profesor' %}>
+                        
+                        <div class="card card-hover border-0 mb-4 "><div class="fondo-profesor shadow-lg"></div>
+                        <h3 class="h5 nav-heading-title mb-0 titulo-inicio">Consulta de Profesores</h3><span class="fs-sm fw-normal text-muted">Consulta los profesores de la plataforma</span></a></div>
+                    </div>
+            </div>
+            <div class="container pt-md-4 pb-md-4 tarjeta-inicio">
+                    <div class="col-lg-10 col-sm-10 mb-grid-gutter pb-3">
+                        <a class="d-block nav-heading text-center" href={% url 'busqueda_estudiante' %}>
+                        
+                        <div class="card card-hover border-0 mb-4 "><div class="fondo-estudiante shadow-lg"></div>
+                        <h3 class="h5 nav-heading-title mb-0 titulo-inicio">Consulta de Estudiantes</h3><span class="fs-sm fw-normal text-muted">Consulta los estudiantes de la plataforma</span></a></div>
+                    </div>
+            </div>
+        </div>
+
+        {% endblock contenidoExtra %}
+
         <!-- Footer-->
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
