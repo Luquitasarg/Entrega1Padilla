@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+
+
+{% block header_index %}
+<header class="masthead">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center text-white">
+                    <h1 class="mb-5">Alta de Cursos</h1>
+                        <div class="row">
+                            <div class="col">
+                                Agregue un nuevo curso al sistema
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock header_index %}
+
+
+{% block formularioTemplate %}
+<div class="container position-relative">
+    <div class="row justify-content-center">
+        <div class="col-xl-6">
+            <form action= {% url 'formulario_curso' %} method="post" id="cargaFormulario">
+                {% csrf_token %}
+
+                <table>
+                    {{ formulario.as_table }}
+                </table>
+
+                <input type="submit" value="Crear nuevo curso" class="btn btn-primary mb-2">
+            <form>
+        </div>
+    </div>
+</div>
+{% endblock formularioTemplate %}

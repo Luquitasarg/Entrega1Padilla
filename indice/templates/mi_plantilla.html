@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+
+    {% block bloque_head %}
+        <title>Mi plantilla nueva </title>
+    {% endblock bloque_head %}
+
+
+    {% comment %} {% block header_index %}
+        <header class="masthead">Soy otro header</header>    
+    {% endblock header_index %} {% endcomment %}
+
+
+    {% block pruebaTemplate %}
+        {% block bloque_de_plantilla %}
+        
+        {% endblock bloque_de_plantilla %}
+        
+        Mi plantilla vacía
+        {{nombre}} {{apellido}}
+    {% endblock  %}
+

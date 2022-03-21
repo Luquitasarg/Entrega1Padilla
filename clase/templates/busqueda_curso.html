@@ -1,0 +1,44 @@
+{% extends 'index.html' %}
+
+{% block header_index %}
+<header class="masthead">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center text-white">
+                    <h1 class="mb-5">Búsqueda de Cursos</h1>
+                    <form class="form-subscribe" data-sb-form-api-token="API_TOKEN"  action= {% url 'busqueda_curso' %} method="get">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col">
+                                {{ buscador }}
+                            </div>
+                            <div class="col-auto"><button class="btn btn-primary btn-lg "  type="submit">Consultar</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock header_index %}
+
+
+{% block busquedaTemplate %}
+
+    {% if dato %}
+        <div class="container-sm" style="margin-top:2%;margin-bottom:1%;"> 
+            <h2> Resultados de la búsqueda para: {{dato}}</h2>
+        </div>
+            {% for curso in cursos_buscados %}
+                <div class="container-sm themed-container">
+                        {{curso}}
+                </div>
+            {% endfor %}
+    {% else %}
+        <div class="container-sm themed-container" style="margin-top:3%;">
+            No se buscó nada aún. Realiza tu primera búsqueda.
+        </div>
+    {% endif %}    
+
+{% endblock busquedaTemplate %}
